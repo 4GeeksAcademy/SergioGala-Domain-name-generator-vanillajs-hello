@@ -11,19 +11,46 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <style>
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #ff5722;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      button:hover {
+        background-color: #346934;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      button:active {
+        background-color: #378842;
+      }
+    </style>
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
+      <h1 class="mt-5">Hello this is a domain name generator!</h1>
+      <h3>
+        U need to wait untill a new domain is created, push the button to stop
+        the creations
+      </h3>
+      <img
+        id="image"
+        class="col-2 img-fluid mx-auto mt-4"
+        src="https://previews.123rf.com/images/zdeneksasek/zdeneksasek2004/zdeneksasek200400128/145823396-vector-de-dibujos-animados-figura-de-palo-dibujo-ilustraci%C3%B3n-conceptual-de-hombre-o-empresario-mano.jpg"
+      />
+      <p class="alert alert-warning mt-4" id="generator">Creating domains</p>
+      <button id="toggleButton">Stop</button>
       <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+        Made by
+        <a href="https://github.com/SergioGala">Sergio Gala</a>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
